@@ -1,0 +1,44 @@
+{
+  "name": "mern-blog-app",
+  "version": "1.0.0",
+  "description": "A full-stack MERN blog application with testing and debugging features",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/src/server.js",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:server:watch": "cd server && npm run test:watch",
+    "test:client:watch": "cd client && npm run test:watch",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm install && npm run install:server && npm run install:client",
+    "lint": "npm run lint:server && npm run lint:client",
+    "lint:server": "cd server && npm run lint",
+    "lint:client": "cd client && npm run lint"
+  },
+  "keywords": [
+    "mern",
+    "blog",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "testing",
+    "jest"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
