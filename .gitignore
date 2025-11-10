@@ -96,8 +96,8 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Screenshots (if not needed in repo)
-screenshots/
+# Screenshots (keeping in repo for documentation)
+# screenshots/
 
 # Test coverage
 coverage/
